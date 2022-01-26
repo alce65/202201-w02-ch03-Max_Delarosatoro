@@ -1,4 +1,6 @@
+import { length } from './length.js';
+
 export const push = (array, element) => {
-    const newArray = [...array, element];
-    return newArray;
-}
+    array[length(array)] = element;
+    return length(array);
+};
